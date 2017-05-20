@@ -1,0 +1,49 @@
+.nav,
+#site_header
+    background: #4b367c
+    border-bottom: none
+    box-shadow: none
+
+    .svg-logo_twitch,
+    #header_logo svg path
+        fill: #fff
+
+    .button
+        color: lighten($theme-text-3, 10%)
+
+        svg
+            fill: lighten($theme-text-3, 10%)
+
+        &:hover,
+        &:focus
+            color: $theme-text-4
+            background: darken($theme-twitch-primary, 5%)
+
+        &:focus
+            background: darken($theme-twitch-primary, 10%)
+
+        &.button--dropmenu
+            &:after
+                border-top-color: lighten($theme-text-3, 10%)
+
+            &:hover
+                &:after
+                    border-top-color: $theme-text-4
+
+    .form__icon svg
+        color: $theme-text-1
+
+.top-nav
+    .new-search__input[type=text]
+        background: $theme-bg-2
+        border-color: $theme-bg-2
+        box-shadow: none !important
+        color: $theme-text-1
+        transition: none
+
+    .form__icon svg
+        fill: $theme-text-1
+
+.top-nav-drawer__item
+    a:hover
+        color: $theme-text-4

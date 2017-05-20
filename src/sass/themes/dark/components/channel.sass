@@ -1,0 +1,167 @@
+// removing whitespace above the player
+#channel
+    #custom-bg
+        display: none
+
+// channel bar
+.cn-bar
+    background: $theme-bg-1
+    box-shadow: inset 0 -1px 0 $theme-bg-3, 0 -1px 1px rgba(0,0,0,.065)
+
+.cn-content
+    .upsell-banner
+        background: $theme-bg-2
+        border-color: $theme-twitch-primary
+        color: $theme-text-1
+
+.recent-past-broadcast__message_sub
+    color: $theme-text-2
+
+.cn-tabs__item
+    > a
+        color: $theme-text-1
+
+        &:hover
+            color: $theme-text-4
+
+            .cn-tabs__count
+                color: $theme-text-3
+
+            &:after
+                border-color: $theme-bg-3
+
+        &.active
+            color: $theme-text-4
+
+            .cn-tabs__count
+                color: $theme-text-2
+
+            &, &:hover
+                &:after
+                    border-color: $theme-twitch-primary
+
+        &.cn-tabs__profile
+            color: $theme-text-1
+
+            &:after
+                opacity: 0
+
+            &:hover:after
+                opacity: 1
+
+            &.active, &.active:hover
+                &:after
+                    border-color: $theme-twitch-primary
+                    opacity: 1
+
+.cn-tabs__count
+    color: $theme-text-2
+
+.cn-tabs__item--withseparator:after
+    border-color: $theme-bg-3
+
+.cn-bar__displayname
+    color: $theme-text-1
+
+.cn-bar__avatar-wrap
+    background: $theme-text-1
+    border-color: $theme-text-1
+
+.cn-metabar__viewcount
+    color: $theme-text-2
+
+    svg
+        fill: $theme-text-2
+
+.cn-metabar
+    .card__pipe
+        color: $theme-text-2
+
+    .cn-metabar__title
+        a
+            color: $theme-twitch-link
+
+            &:hover
+                color: $theme-twitch-link-hover
+
+.cn-notification-controls
+    .toggle-notification-menu
+        background: $theme-bg-3
+
+        &:before
+            border-top-color: $theme-text-2
+
+        &:hover
+            background: $theme-bg-4
+
+            &:before
+                border-top-color: $theme-text-1
+
+// player
+.player-placeholder
+    background: $theme-bg-2
+
+.player-menu-options
+    border-color: $theme-bg-3
+
+.player-text-link
+    color: $theme-twitch-link
+
+    &:hover
+        color: $theme-twitch-link-hover
+
+    &:focus
+        outline: none
+
+.player-offline-banner
+    background: darken($theme-bg-1, 4%)
+
+select.pl-form__input
+    background-color: #17141f
+    color: #898395
+    box-shadow: inset 0 0 0 1px #292438
+
+.player-mini__titlebar
+    background: $theme-bg-2
+
+// panels
+.panel-formatting
+    .panel
+        &, h3
+            color: $theme-text-1
+
+        .description
+            hr
+                background: $theme-bg-3
+                color: $theme-bg-3
+
+.empty-grid
+    color: $theme-text-2
+
+// cards
+.activity-card
+    background: $theme-bg-2
+    box-shadow: inset 0 0 0 1px $theme-bg-3
+
+.activity-meta__name
+    color: $theme-text-1
+
+.activity-card__comments
+    background: darken($theme-bg-2, 2%)
+    box-shadow: inset 0 -1px 0 $theme-bg-3, inset -1px 0 0 $theme-bg-3, inset 1px 0 0 $theme-bg-3
+
+.activity-button
+    background: $theme-bg-2
+    border-color: $theme-bg-3
+    color: $theme-text-2
+
+    &:hover
+        border-color: lighten($theme-bg-4, 4%)
+
+.activity-list-end
+    svg
+        fill: $theme-text-2
+
+.list-load-more
+    border-color: $theme-bg-3
+    color: $theme-text-2

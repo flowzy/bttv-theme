@@ -1,0 +1,366 @@
+body,
+.app-main,
+.main,
+.fullwidth_main,
+#clips-app-root
+    background: $theme-bg-1
+    color: $theme-text-1
+
+body:before
+    content: ''
+    background: $theme-bg-1
+    position: fixed
+    bottom: 0
+    right: 0
+    left: 0
+    top: 0
+    z-index: -1
+
+.loading-spinner
+    border-color: $theme-bg-4
+    border-left-color: $theme-text-1
+
+// scrollbar
+.tse-scrollbar .drag-handle
+    background: $theme-text-1
+    box-shadow: none
+
+.bttv__drawer-button
+    background: $theme-bg-3
+
+// links
+a,
+.card a,
+.player a.player-text-link
+    color: $theme-twitch-link
+
+    &:hover
+        color: $theme-twitch-link-hover
+
+    &.header-announcement__link
+        color: #000
+
+    &.front-page-announcement__link
+        color: #fff
+
+        &:hover
+            color: #000
+
+.player a.player-text-link--no-color
+    color: #fff
+
+    &:hover
+        color: $theme-twitch-link-hover
+
+// default elements
+hr
+    border-color: $theme-bg-3
+
+label
+    color: $theme-text-2
+
+// svgs
+.form__icon svg,
+.fill-grey-10 svg
+    fill: $theme-text-2
+
+.icon-platform-windows--black svg
+    fill: $theme-text-4
+
+// left & right toggles
+#left_close,
+#right_close
+    background: $theme-bg-1
+
+#left_close
+    &:before
+        border-right-color: $theme-text-1
+
+    &.closed
+        &:before
+            border-left-color: $theme-text-1
+
+#right_close
+    &:before
+        border-left-color: $theme-text-1
+
+    &.closed
+        &:before
+            border-right-color: $theme-text-1
+
+// cards
+.card__title
+    &, a
+        color: $theme-text-1
+
+    a:hover
+        color: $theme-text-4
+
+a:hover
+    .card__title
+        color: $theme-text-4
+
+.card__info
+    color: $theme-text-2
+
+    a
+        color: inherit
+
+        &:hover
+            color: $theme-text-1
+
+.card__img
+    background: $theme-bg-2
+
+.progress-bar--theme-purple
+    background: $theme-bg-3
+
+    .progress-bar__fill
+        background: $theme-twitch-primary
+
+// bricks
+.brick
+    background: $theme-bg-2
+    border-color: $theme-bg-2
+
+.brick--theme-white,
+.brick--block,
+.brick--faint
+    background: $theme-bg-1
+    border-color: $theme-bg-3
+
+.brick--marked
+    border-left-color: $theme-twitch-primary !important
+
+.c-background
+    background: $theme-bg-1 !important
+
+// footer
+.site-footer
+    background: $theme-bg-2
+
+.site-footer__glitch
+    path
+        fill: $theme-text-2
+
+#copyright_and_footer_links
+    color: $theme-text-2
+
+// cookie consent
+.i-am-new
+    > li
+        background: $theme-bg-3 !important
+        border-color: $theme-bg-4 !important
+        color: $theme-text-1 !important
+
+    .noty_close
+        background: none !important
+        font-size: 16px
+        width: 16px
+        height: 16px
+        opacity: 1 !important
+        font-weight: bold
+
+        &:hover
+            &:before
+                color: $theme-twitch-link-hover
+
+        &:before
+            content: '\00d7'
+            color: $theme-twitch-link
+
+// notifications
+.sc-onboarding
+    box-shadow: 0 0 0 .1rem $theme-bg-3
+
+    .sc-onboarding__close
+        background: $theme-bg-2
+        box-shadow: -0.1rem 0 0 $theme-bg-3 inset
+
+        &:hover
+            background: $theme-bg-3
+
+    .sc-onboarding__content
+        background: $theme-bg-1
+
+.toast
+    background: $theme-bg-2
+    border-color: $theme-bg-3
+    box-shadow: none
+
+    &:hover
+        border-color: $theme-bg-4
+        box-shadow: 0 0.2rem 0.7rem transparentize($theme-bg-4, 0.6)
+
+.toast__content-msg
+    color: $theme-text-1
+
+.toast__details
+    color: $theme-text-2
+
+.toast__action--primary,
+.toast__action-wrapper
+    border-color: $theme-bg-3
+
+.toast__action--primary
+    color: $theme-twitch-link
+
+    &:hover
+        background: $theme-bg-3
+        color: $theme-twitch-link-hover
+
+.toast__action--secondary
+    a
+        color: $theme-text-2
+
+    &:hover,
+    &:active
+        background: $theme-bg-3
+
+        a
+            color: $theme-text-1
+
+// helpers
+.border-b
+    border-bottom-color: $theme-bg-3
+
+.border-t
+    border-top-color: $theme-bg-3
+
+.sub-text
+    color: $theme-text-2
+
+.pill:not(.pill--red):not(.pill--orange):not(.pill--purple)
+    background: $theme-bg-4
+    color: $theme-text-2
+
+// table
+.table
+    background: $theme-bg-2
+
+.table__header
+    background: $theme-bg-2
+
+.table__row
+    background: lighten($theme-bg-1, 3%)
+    color: $theme-text-1
+
+    &:nth-child(even)
+        background: $theme-bg-2
+
+    &:hover
+        background: $theme-bg-3
+
+.table__cell
+    border-color: $theme-bg-3
+    color: $theme-text-1
+
+.table__zero-body
+    color: $theme-text-2
+
+// modals
+.twitch_subwindow_container,
+.kraken-embed,
+.kraken-page
+    .card
+        background: $theme-bg-1
+
+        .text-content .content-header,
+        .buttons
+            border-color: $theme-bg-3
+
+// scrollbar
+*::-webkit-scrollbar
+    width: 6px
+ 
+*::-webkit-scrollbar-thumb
+    background: #aaa5b7
+    border-radius: 6px
+
+*::-webkit-scrollbar-track
+    background: transparent
+
+// light theme stuff
+.theme--light
+    .border-b
+        border-color: $theme-bg-3
+
+// notification
+.notification-center
+    background: $theme-bg-2
+
+.notification-center__subheader
+    background: $theme-bg-3
+
+.notification-center__header,
+.notification-center__footer,
+.notification-center__subheader
+    border-color: $theme-bg-3
+
+.notification-center__footer
+    background: $theme-bg-2
+    color: $theme-text-1
+
+.notification-center__header-text,
+.notification-center__subheader-text
+    color: $theme-text-1
+
+.friend-requests__empty
+    background: $theme-bg-2
+    color: $theme-text-2
+
+.notification-center__core-end
+    background: $theme-bg-2
+    box-shadow: none
+    color: $theme-text-1
+
+.notification-center__core-end-icon svg
+    fill: $theme-text-2
+
+.notification__container
+    border-color: $theme-bg-2
+
+.notification__content-msg
+    color: $theme-text-1
+
+.notification__details
+    color: $theme-text-2
+
+    svg
+        fill: $theme-text-2
+
+.notification__dismiss
+    svg
+        fill: $theme-bg-1
+
+    &:hover,
+    &:focus
+        svg
+            fill: $theme-text-4
+
+            polygon
+                fill: $theme-bg-1
+
+.notification--unread
+    background: $theme-bg-4
+
+    &:hover,
+    &:focus
+        background: lighten($theme-bg-4, 4%)
+
+        .notification__content-msg
+            color: $theme-text-4
+
+        .notification__details
+            color: $theme-text-3
+
+            svg
+                fill: $theme-text-3
+
+.notification--read
+    background: $theme-bg-2
+    border-color: $theme-bg-3
+
+    &:hover,
+    &:focus
+        background: $theme-bg-3

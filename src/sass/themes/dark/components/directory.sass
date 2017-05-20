@@ -1,0 +1,164 @@
+// tabs
+.tw-tabs,
+.tabs
+    box-shadow: 0 -1px 0 $theme-bg-3 inset
+
+    > .tab,
+    > li
+        > a
+            color: $theme-text-3
+
+.tabs__item
+    box-shadow: none
+
+    &.tabs__item--active
+        box-shadow: inset 0 -1px 0 $theme-twitch-primary
+
+.tabs,
+.tabs__item,
+.tw-tabs__item
+    > li
+        &.selected
+            > a,
+            > button
+                color: $theme-text-4
+    > a,
+    > button,
+    > li > a,
+    > li > button,
+    > label
+        color: $theme-text-3
+
+        &.active
+            color: $theme-text-4
+
+        &:focus
+            box-shadow: 0 -2px 0 #6441a4 inset, 0 4px 6px -4px transparentize(#7d5bbe, 0.4)
+
+.subscription-modal__sub-tabs
+    input:checked + .subscription-modal__sub-tabs-label
+        color: $theme-text-4
+
+.subscription-modal__sub-tabs-label
+    color: $theme-text-3
+
+    &:focus
+        box-shadow: 0 -2px 0 #6441a4 inset, 0 4px 6px -4px transparentize(#7d5bbe, 0.4)
+
+// filter grid
+.filter-list
+    .filter-item
+        background: $theme-bg-2
+
+        span
+            border-color: $theme-text-1
+
+.filter-nav
+    border-color: $theme-text-1 !important
+
+// games & channels
+.items-grid
+    .section_header h3
+        color: $theme-text-2
+
+    .meta
+        .info
+            color: $theme-text-2
+
+        .title a:hover
+            color: $theme-text-4
+
+        p
+            &.title a
+                color: $theme-text-1
+
+                &:hover
+                    color: $theme-text-4
+
+            a
+                color: lighten($theme-text-2, 5%)
+
+                &:hover
+                    color: lighten($theme-text-2, 10%)
+
+    .item
+        .cap
+            background: $theme-bg-2
+
+        .title
+            &, &:hover
+                color: $theme-text-3
+
+        a:hover .title
+            color: $theme-text-4
+
+        .title,
+        .info
+            a
+                &:hover
+                    color: $theme-text-1
+
+        .boxart
+            border-color: $theme-text-1
+
+.mixed-header__title
+    color: $theme-text-2
+
+.following-games-onboarding
+    background: $theme-bg-1
+    border-color: $theme-bg-3
+
+// creative
+.cm-cover
+    background-color: $theme-bg-1
+
+.ct-type-4
+    color: $theme-text-1
+
+.ct-type-5
+    color: $theme-text-2
+
+// inventory
+.inventory-header
+    border-color: $theme-bg-3
+
+// following
+.viewall
+    a
+        background: $theme-bg-2
+
+        .text span,
+        .countries-input span
+            color: $theme-text-2
+
+            &:first-child
+                color: $theme-twitch-link
+
+        &:hover
+            background: $theme-bg-3
+
+            .text span,
+            .countries-input span
+                color: $theme-text-1
+
+                &:first-child
+                    color: $theme-twitch-link-hover
+
+// game
+.game-details__section--white
+    background: $theme-bg-1
+
+.game-details__section--grey
+    background: $theme-bg-2
+
+.game-details__section--white + .game-details__section--grey,
+.game-details__section--grey + .game-details__section--white
+    border-color: $theme-bg-2
+
+.cmrc-game-details-box
+    color: $theme-text-2
+
+.game-details__header
+    .tabs,
+    .tw-tabs
+        box-shadow: 0 -1px 0 rgba(187,165,255,.15) inset

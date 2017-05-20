@@ -1,0 +1,55 @@
+.balloon
+    .balloon__link
+        color: $theme-twitch-link !important
+
+        &.filter-bar__balloon-link--active,
+        &.balloon__link--selected
+            background: $theme-bg-3 !important
+            color: $theme-text-3 !important
+
+            &:hover
+                background: $theme-bg-4 !important
+                color: $theme-text-4 !important
+
+    .filter-bar__balloon-footer
+        background: $theme-bg-2
+        border-color: $theme-bg-3
+
+.balloon,
+.player-menu__menu,
+.dropmenu,
+.ui-menu,
+.ui-multiselect-menu,
+.sort-contain .sort-options
+    color: $theme-text-1
+    box-shadow: 0 0 0 1px transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+    &, &:after
+        background: $theme-bg-1
+
+.balloon--up:after
+    box-shadow: 1px 1px 0 transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+.balloon--down:after
+    box-shadow: -1px -1px 0 transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+.balloon--left:after
+    box-shadow: 1px -1px 0 transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+.balloon--right:after
+    box-shadow: -1px 1px 0 transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+.balloon--cols
+    .balloon__list
+        ~ .balloon__list
+            box-shadow: -1px 0 0 $theme-bg-2
+
+.lm-search,
+.balloon__stroke
+    border-color: $theme-bg-3
+
+.sort-contain .sort-options
+    background: $theme-bg-1
+
+.balloon__title
+    color: $theme-text-2

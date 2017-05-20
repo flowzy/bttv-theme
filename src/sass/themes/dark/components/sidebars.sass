@@ -1,0 +1,116 @@
+// left sidebar
+.warp,
+#large_nav .content
+    background: $theme-bg-2
+    border-right: 1px solid $theme-bg-3
+
+.warp__item > a
+    color: $theme-text-1
+
+    &:hover
+        background: $theme-bg-3
+        color: $theme-text-4
+
+        .warp__avatar svg
+            fill: $theme-text-4
+
+    &.warp__logo:hover
+        background: none
+
+    .warp__avatar svg
+        fill: $theme-text-1
+
+.warp__item--toggled > a
+    &, &:hover
+        background: $theme-bg-3
+        color: $theme-text-4
+
+        .warp__avatar svg
+            fill: $theme-text-4
+
+.warp__item .js-language-select
+    display: block
+    color: $theme-text-2
+
+    &:hover
+        background: $theme-bg-3
+        color: $theme-text-4
+        text-decoration: none
+
+.warp__item--anchor
+    background: $theme-bg-2
+
+.warp__item--header
+    color: $theme-text-1
+
+    &:before
+        background: $theme-bg-3
+
+.warp__drawer
+    background: $theme-bg-2
+    box-shadow: 0 -1px 0 $theme-bg-3
+
+.warp__tab
+    &:after
+        background: $theme-twitch-primary
+
+.theme--dark
+    .social-column
+        box-shadow: -0.1rem 0 0 #2c2541 inset
+
+// ## legacy left sidebar
+#large_nav .new-search
+    width: 82%
+
+// right sidebar
+#right_col
+    background: $theme-bg-2
+    border-left: 1px solid $theme-bg-3
+
+.no-login-contain
+    h3
+        color: inherit
+
+    li
+        background: $theme-bg-3
+
+.following-col
+    .col-header
+        border-color: $theme-bg-3
+        color: $theme-text-1
+
+        .search-contain .search .search-button
+            svg path
+                fill: $theme-text-2
+
+            &:hover
+                svg path
+                    fill: $theme-text-1
+
+            .search-input:focus
+                border-color: $theme-twitch-primary
+
+    .header
+        color: $theme-text-2
+        border-color: $theme-bg-3
+
+    .following-list
+        .channel
+            .game,
+            .viewers
+                color: $theme-text-2
+
+                svg path
+                    fill: $theme-text-2
+
+        .load-more
+            span,
+            &:before
+                color: $theme-text-2
+                background: $theme-bg-3
+
+            &:hover
+                span,
+                &:before
+                    color: $theme-text-1
+                    background: $theme-bg-4

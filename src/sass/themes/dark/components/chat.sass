@@ -1,0 +1,311 @@
+.chat-container
+    &, &.dark, &.theme--dark
+        background: $theme-bg-2
+        border-left: none
+        color: $theme-text-1
+
+.theatre .ember-chat,
+.theme--dark .ember-chat,
+.ember-chat
+    img.emoji
+        max-height: 18px
+
+    .chat-header
+        background: $theme-bg-2
+        box-shadow: inset 0 -1px 0 0 $theme-bg-3
+
+    .chat-messages
+        background: none
+
+        .timestamp
+            color: $theme-text-2
+            line-height: 12px
+            margin-top: 5px
+            
+        .chat-lines
+            margin-bottom: -1px
+            padding: 10px 0 0
+
+        .chat-line
+            padding: 5px 11px
+            border-bottom: 1px solid $theme-bg-3
+            margin: 0
+            line-height: 21px
+
+            &:nth-of-type(odd)
+                background: darken($theme-bg-2, 2%)
+
+            &.admin,
+            &.notification
+                padding: 5px 11px
+
+                .message
+                    color: $theme-text-2
+
+                // ### make all nicknames white for better readability
+                // span.from
+                //     color: $theme-text-4 !important
+
+            span.from
+                // dark green
+                &[style*="#1F3A12"]
+                    color: lighten(#1f3a12, 20%) !important
+
+                // dark blue
+                &[style*="#0000FF"]
+                    color: lighten(#0000ff, 20%) !important
+
+                // purple
+                &[style*="#8A2BE2"]
+                    color: $theme-twitch-link !important
+
+                // dark purple
+                &[style*="#310150"]
+                    color: lighten(#310150, 20%) !important
+
+                // black
+                &[style*="#000000"]
+                    color: $theme-text-4 !important
+
+                // dark grey
+                &[style*="#303030"]
+                    color: lighten(#303030, 20%) !important
+
+    .chat-interface
+        background: $theme-bg-2
+        border-top: 1px solid $theme-bg-3
+        padding: 10px 10px 0 10px
+        height: 111px
+
+        .more-messages-indicator
+            left: 0
+            right: 0
+            top: -31px
+
+        .chat-rules
+            background: $theme-bg-3
+            color: $theme-text-1
+            border-color: $theme-bg-4
+            width: 94%
+            bottom: 110px
+
+    .chat-menu
+        .list-header
+            color: $theme-text-2
+            border-top-color: $theme-bg-3
+
+    .chatters-view
+        background: $theme-bg-2
+
+    .chat-room-list
+        background: $theme-bg-2
+        border-color: $theme-bg-3
+        top: 49px
+        left: -1px
+
+        .room p.room-title
+            color: $theme-twitch-link
+
+    .all-rooms-header
+        border-bottom-color: $theme-bg-3
+
+    p.no-content
+        color: $theme-text-2
+
+.chatReplay
+    .loading-spinner-container
+        background: $theme-bg-2
+
+    .chat-interface
+        display: none
+
+.cn-chat-replay-header
+    &, .app-main.theatre &
+        background: $theme-bg-2
+        box-shadow: inset 0 -1px 0 0 $theme-bg-3
+
+        p
+            color: $theme-text-1
+
+.emoticon-selector-toggle,
+.bits-toggle
+    svg path,
+    path
+        fill: $theme-text-2
+
+    &:hover
+        svg path,
+        path
+            fill: $theme-text-1
+
+    &.toggled
+        svg path,
+        path
+            fill: $theme-text-4
+
+.emoticon-selector
+    .emoticon-selector-box
+        background: $theme-bg-3
+        color: $theme-text-1
+
+        .emoticon:hover
+            background-color: $theme-bg-1
+
+        .all-emotes .emote-set
+            border-color: $theme-bg-4
+
+    .emoticon-selector__tabs
+        border-color: $theme-bg-4
+
+        .emoticon-selector__tab
+            color: $theme-text-2
+
+            &:hover
+                border-color: $theme-twitch-primary
+
+            &.active
+                color: $theme-text-4
+                border-color: $theme-twitch-primary
+
+.bits-card
+    background: $theme-bg-3
+
+    &:after
+        border-top-color: $theme-bg-3
+
+.bits-footer
+    border-color: $theme-bg-3
+
+.bits-card__back
+    color: $theme-text-2
+
+    &:hover,
+    &:focus
+        color: $theme-twitch-link-hover
+
+        .bits-arrow--left:before
+            border-right-color: $theme-twitch-link-hover
+
+.bits-card__close,
+.bits-promo__close,
+.bits-purchase__close
+    svg path
+        fill: $theme-text-2
+
+    &:hover,
+    &:focus
+        svg path
+            fill: $theme-twitch-link-hover
+
+.interactive-cheermote
+    border-color: $theme-bg-4
+
+    &:hover
+        box-shadow: 0 1px 5px $theme-bg-1
+
+.special-message
+    background: $theme-bg-3 !important
+    border-bottom: none !important
+    color: $theme-text-3
+
+    .system-msg
+        color: $theme-text-3
+
+.chat-chip
+    background: $theme-bg-3
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2)
+
+    .card__title
+        &, a
+            color: $theme-text-3
+
+.theatre .sticky-message--pinned-cheers,
+.theme--dark .sticky-message--pinned-cheers,
+.sticky-message--pinned-cheers
+    background: $theme-bg-3
+    border-color: $theme-bg-3
+    margin: 0
+
+.theatre .pinned-cheers,
+.theme--dark .pinned-cheers,
+.pinned-cheers
+    .svg-bits-trophy path,
+    .svg-bits-hourglass path
+        fill: $theme-twitch-link
+
+.theatre .pinned-cheer__top-bar,
+.theme--dark .pinned-cheer__top-bar,
+.pinned-cheer__top-bar
+    color: $theme-twitch-link
+
+.theatre .pinned-cheer__top-bar--delimiter,
+.theme--dark .pinned-cheer__top-bar--delimiter,
+.pinned-cheer__top-bar--delimiter
+    border-color: $theme-bg-4
+
+.theatre .pinned-cheer__expando-arrow .pinned-cheer__arrow:before,
+.theme--dark .pinned-cheer__expando-arrow .pinned-cheer__arrow:before,
+.pinned-cheer__expando-arrow .pinned-cheer__arrow:before
+    border-color: $theme-twitch-link
+
+.theatre .pinned-cheer__hack-box,
+.theme--dark .pinned-cheer__hack-box,
+.pinned-cheer__hack-box
+    background: $theme-bg-3
+
+// whispers
+.conversations-content
+    .conversations-list-bottom-bar
+        background: $theme-bg-2
+        border-color: $theme-bg-3
+
+    .conversations-list-search-bar
+        input
+            background-color: $theme-bg-1
+
+.conversations-list
+    background: $theme-bg-2
+    border-color: $theme-bg-3
+
+    .conversations-list-header
+        background: $theme-bg-2
+        border-color: $theme-bg-3
+
+    .conversations-list-item,
+    .search-divider
+        border-color: $theme-bg-3
+
+    .conversations-list-item
+        &:hover
+            background: $theme-bg-3
+
+.conversation-settings-menu
+    background: $theme-bg-1
+    border-color: transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+    &:before
+        border-bottom-color: transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+    &:after
+        border-bottom-color: $theme-bg-1
+
+    .options-divider
+        border-color: $theme-bg-3
+
+.conversation-window
+    background: $theme-bg-2
+
+    &,
+    &.has-focus
+        box-shadow: inset 0 0 0 1px $theme-bg-3, 0 15px 45px 0 rgba(0,0,0,.19)
+
+        .convoHeader
+            background: $theme-bg-3
+            box-shadow: inset 0 0 0 1px $theme-bg-4, 0 2px 0 rgba(0,0,0,.05)
+
+    .conversation-system-message
+        color: $theme-text-2
+
+    .block-divider
+        &.timestamp-line
+            color: $theme-text-2

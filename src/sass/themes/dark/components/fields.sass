@@ -1,0 +1,58 @@
+input.text,
+input.countries-input,
+input.string,
+textarea
+    background: $theme-bg-1
+    border-color: $theme-bg-3
+    color: $theme-text-1
+
+    &::-webkit-input-placeholder
+        color: $theme-text-2
+
+    &:hover
+        border-color: lighten($theme-bg-4, 4%)
+
+    &:focus
+        border-color: lighten($theme-bg-4, 8%)
+
+textarea
+    padding: 7px 12px
+
+.theme--dark select.form__input,
+select.form__input,
+.theme--dark textarea.form__input,
+textarea.form__input,
+.theme--dark .form__input[type=text],
+.form__input[type=text],
+.theme--dark .form__input[type=email],
+.form__input[type=email],
+.theme--dark .form__input[type=password],
+.form__input[type=password],
+.theme--dark .form__input[type=search],
+.form__input[type=search],
+.theme--light select.pl-form__input,
+select.pl-form__input
+    background-color: $theme-bg-1
+    box-shadow: $theme-bg-4 0 0 0 1px inset
+    color: $theme-text-1
+
+    &:hover
+        box-shadow: lighten($theme-bg-4, 5%) 0 0 0 1px inset
+
+    &:focus
+        box-shadow: $theme-twitch-primary 0 0 0 1px inset
+
+.form__hint
+    color: $theme-text-2
+
+@function url-friendly-color($color)
+    @return str-slice('#{$color}', 2, -1)
+
+select.form__input,
+select.pl-form__input
+    background-image: url('data:image/svg+xml,<svg%20viewBox%3D"0%200%2012%2012"%20xmlns%3D"http%3A//www.w3.org/2000/svg"%20fill%3D"%23#{url-friendly-color($theme-text-1)}"><polygon%20points%3D"6%2C1%2010%2C5%202%2C5"/>%20<polygon%20points%3D"6%2C11%2010%2C7%202%2C7"/></svg>')
+
+.form__label,
+.form__input[type=checkbox] + label,
+.form__input[type=radio] + label
+    color: $theme-text-1

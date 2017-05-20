@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+
+    "name": "BetterTTV Theme",
+    "description": "Rework of the current BetterTTV dark theme",
+    "version": "1.0",
+
+    "homepage_url": "https://nightdev.com/betterttv/",
+
+    "permissions": [
+        "storage", "https://*.twitch.tv/"
+    ],
+
+    "icons": {
+        "16": "extension/icons/chrome-icon-16.png",
+        "48": "extension/icons/chrome-icon-48.png",
+        "128": "extension/icons/chrome-icon-128.png"
+    },
+
+    "background": {
+        "scripts": ["build/js/background.js"],
+        "persistent": true
+    },
+
+    "browser_action": {
+        "default_icon": "extension/icons/chrome-icon-16-off.png",
+        "default_popup": "extension/popup/index.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.twitch.tv/*"],
+            "js": ["build/js/jquery-3.2.0.min.js", "build/js/app.js"],
+            "run_at": "document_end",
+            "match_about_blank": true
+        }
+    ],
+
+    "web_accessible_resources": ["build/css/app.css", "build/css/theme-dark.css"]
+}
