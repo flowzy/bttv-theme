@@ -6,7 +6,7 @@ import { Debug, Mockups } from './components/index'
 // variables
 let bttv = {
     dev: {
-        enabled:    true,
+        enabled:    false,
         cdn:        chrome.runtime.getURL('')
     },
     mockups:    new Mockups,
