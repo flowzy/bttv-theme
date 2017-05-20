@@ -2,6 +2,9 @@
 This is a complete rework of the current dark theme that comes bundled with BetterTTV.
 It was made from the ground up and is a lot more polished, but don't expect that everyone would like it, as it is more purple-ish than the original.
 
+![Games](http://i.imgur.com/WG5kPO7.jpg)
+![Channel](http://i.imgur.com/tjZmWnU.jpg)
+
 # Setup
 1. Download this repository (as ZIP)
 2. Extract folder "build" from the ZIP file and place it anywhere on your computer
@@ -18,4 +21,4 @@ It was made from the ground up and is a lot more polished, but don't expect that
 **Disclaimer:** while testing this theme, it is suggested that you disable BetterTTV, because otherwise the styles of both will mix up and make everything look not as intended.
 
 # Plans
-* Create a grey-ish theme
+* Create a more monotone colored theme
