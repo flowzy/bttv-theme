@@ -11,7 +11,7 @@ It was made from the ground up and is a lot more polished, but don't expect that
 6. Open Twitch.tv, press F12 and select "Console"
 7. Find a dropdown menu "top" (http://i.imgur.com/AHg8pSZ.png)
 8. Select "BetterTTV Theme"
-9. Paste in *BetterTTV.storage.set({ settings: { theme: 'dark' } })* and press Enter
+9. Paste in `BetterTTV.storage.set({ settings: { theme: 'dark' } })` and press Enter
 10. Refresh the page
 11. Done.
 
