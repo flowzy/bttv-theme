@@ -1,4 +1,4 @@
-# BetterTTV Dark Theme rework
+# About
 This is a complete rework of the current dark theme that comes bundled with BetterTTV.
 It was made from the ground up and is a lot more polished, but don't expect that everyone would like it, as it is more purple-ish than the original.
 
@@ -17,5 +17,5 @@ It was made from the ground up and is a lot more polished, but don't expect that
 
 **Disclaimer:** while testing this theme, it is suggested that you disable BetterTTV, because otherwise the styles of both will mix up and make everything look not as intended.
 
-# Future plans
-In the future I plan on adding back the more monotone color scheme which is used by current dark theme.
+# Plans
+* Create a grey-ish theme
