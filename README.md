@@ -1,7 +1,8 @@
 # About
 This is a complete rework of the current dark theme that comes bundled with BetterTTV.
-It was made from the ground up and is a lot more polished, but don't expect that everyone would like it, as it is more purple-ish than the original.
+It was made from the ground up and is a lot more polished around the edges, but I don't expect that everyone would like it, as it is more purple-ish than the original.
 
+### Preview
 ![Games](http://i.imgur.com/WG5kPO7.jpg)
 ![Channel](http://i.imgur.com/tjZmWnU.jpg)
 
@@ -19,6 +20,3 @@ It was made from the ground up and is a lot more polished, but don't expect that
 11. Done.
 
 **Disclaimer:** while testing this theme, it is suggested that you disable BetterTTV, because otherwise the styles of both will mix up and make everything look not as intended.
-
-# Plans
-* Create a more monotone colored theme
