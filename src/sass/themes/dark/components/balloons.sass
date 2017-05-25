@@ -36,8 +36,8 @@
 .balloon--left:after
     box-shadow: 1px -1px 0 transparentize(lighten($theme-bg-3, 35%), 0.8)
 
-.balloon--right:after
-    box-shadow: -1px 1px 0 transparentize(lighten($theme-bg-3, 35%), 0.8)
+// .balloon--right:after
+//     box-shadow: -1px 1px 0 transparentize(lighten($theme-bg-3, 35%), 0.8)
 
 .balloon--cols
     .balloon__list
@@ -53,3 +53,25 @@
 
 .balloon__title
     color: $theme-text-2
+
+// legacy
+.whatisthis
+    background: $theme-bg-1
+    box-shadow: 0 0 0 1px transparentize(lighten($theme-bg-3, 35%), 0.8)
+    color: $theme-text-1
+
+    &:before
+        border-bottom-color: $theme-bg-1
+
+    &:after
+        border-bottom-color: transparentize(lighten($theme-bg-3, 35%), 0.8)
+
+    .actions
+        a
+            color: $theme-twitch-link
+
+            &:hover
+                color: $theme-twitch-link-hover
+
+        .divider
+            border-color: $theme-bg-3

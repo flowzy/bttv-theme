@@ -1,0 +1,49 @@
+.messages
+    #message_actions
+        background: $theme-bg-2
+        border-color: $theme-bg-1
+
+    #messages_column
+        background: $theme-bg-1
+
+    #send_message_form,
+    #reply_message_form
+        background: $theme-bg-2
+        border-color: $theme-bg-1
+
+        #bottom_buttons
+            background: $theme-bg-3
+            border-color: $theme-bg-3
+            box-shadow: none
+
+    div.preview
+        background: $theme-bg-1
+        border-bottom-color: $theme-bg-1
+        border-left-color: $theme-bg-2
+
+        &:hover
+            background: $theme-bg-2
+
+        &.unread
+            background: $theme-bg-2
+
+            &:hover
+                background: $theme-bg-3
+
+        .message_body
+            a
+                color: $theme-text-1
+
+        .from_to_user
+            .prof
+                box-shadow: none
+                border: none
+                background: $theme-text-1
+
+    div.message
+        border-bottom-color: $theme-bg-1
+
+    .message_action.block
+        color: $theme-text-1
+        background: none
+        padding: 0 4px 0 10px
